@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 
 const Beanscreen = () => {
   return (
@@ -17,6 +17,27 @@ const Beanscreen = () => {
         centuries ago in the highlands of Ethiopia, and may even be the first
         coffee beans ever consumed!{" "}
       </Text>
+
+      <Text style={styles.size}>Size</Text>
+      <View style={styles.medium}>
+        <View style={styles.firstmedium}>
+          <TouchableOpacity style={styles.big}>
+            <Text style={styles.free}>250gm</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.secondmedium}>
+          <TouchableOpacity style={styles.big}>
+            <Text style={styles.third}>500gm</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.thirdmedium}>
+          <TouchableOpacity style={styles.big}>
+            <Text style={styles.third}>1000gm</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
     </View>
   );
 };
@@ -26,26 +47,69 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-     alignItems: "flex-start",
-     backgroundColor: "black"
+    alignItems: "flex-start",
+    backgroundColor: "black",
   },
 
-    desc: {
-        color: "gray",
-        marginTop: 20
-    },
+  desc: {
+    color: "gray",
+    marginTop: 20,
+  },
+
+  size: {
+    marginTop: 10,
+    color: "white",
+  },
+
+  big: {
+    borderWidth: 2,
+    borderStyle: "solid",
+    borderColor: "#D17842",
+   
+    padding: 15,
+    marginTop: 10,
+  },
+
+  medium: {
+    display: "flex",
+    flexDirection: "row",
+  },
+
+  thirdmedium: {
+    marginLeft: 30,
+    width: 100,
+  },
+
+free: {
+    color: "white",
+    textAlign: "center"
+},
+
+  third: {
+    textAlign: "center",
+    color: "white"
+  },
+
+  firstmedium: {
+    width: 100,
+   
+  },
+
+  secondmedium: {
+    marginLeft: 40,
+    width: 100,
+  },
 
   image: {
-    width: 400, 
-    height: 380, 
-    borderRadius: 10, 
+    width: 400,
+    height: 380,
+    borderRadius: 10,
     marginTop: -286,
   },
   text: {
     marginTop: 20,
     fontSize: 18,
-    color: "white", 
-    
+    color: "white",
   },
 });
 
