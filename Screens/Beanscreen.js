@@ -38,6 +38,14 @@ const Beanscreen = () => {
           </TouchableOpacity>
         </View>
       </View>
+      <View style={styles.cart}>
+        <Text style={styles.cartprice}>$10.50</Text>
+        <TouchableOpacity style={styles.cartbutton}>
+           <Text style={styles.carttext}>
+              Add to Cart
+           </Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -65,9 +73,9 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderStyle: "solid",
     borderColor: "#D17842",
-   
     padding: 15,
     marginTop: 10,
+    backgroundColor: "#141921",
   },
 
   medium: {
@@ -80,36 +88,62 @@ const styles = StyleSheet.create({
     width: 100,
   },
 
-free: {
+  free: {
     color: "white",
-    textAlign: "center"
-},
+    textAlign: "center",
+  },
 
   third: {
     textAlign: "center",
-    color: "white"
+    color: "white",
   },
 
   firstmedium: {
     width: 100,
-   
   },
 
   secondmedium: {
-    marginLeft: 40,
+    marginLeft: 30,
     width: 100,
   },
 
   image: {
     width: 400,
-    height: 380,
+    height: 500,
     borderRadius: 10,
-    marginTop: -286,
+    marginTop: -210,
   },
   text: {
     marginTop: 20,
     fontSize: 18,
     color: "white",
+  },
+
+  cartbutton: {
+    backgroundColor: "#D17842",
+    padding: 20,
+    width: 220,
+    borderRadius: 10,
+    marginLeft: 80,
+    marginTop: -10
+  },
+
+  carttext: {
+    color: "white",
+    textAlign: "center",
+    fontSize: 18
+  },
+  cart: {
+    flexDirection: "row",
+    marginTop: 50,
+    alignItems: "center",
+  },
+
+  cartprice: {
+    color: "white",
+    marginTop: 10,
+    fontSize: 20,
+    marginLeft: 5,
   },
 });
 
