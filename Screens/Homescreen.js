@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import {
   View,
@@ -9,11 +10,9 @@ import {
   StyleSheet,
   ScrollView,
 } from "react-native";
-
 import { useNavigation } from "@react-navigation/native";
 
 const HomeScreen = () => {
-
   const navigation = useNavigation();
 
   const coffeeItems = [
@@ -51,6 +50,15 @@ const HomeScreen = () => {
     },
   ];
 
+  const handleAddButtonPress = (item) => {
+    // Navigate based on item name
+    if (item.name === "Espresso") {
+      navigation.navigate("Espresso"); // Navigate to Espresso screen
+    } else if (item.name === "Coffee") {
+      navigation.navigate("Beans"); // Navigate to Beans screen
+    }
+  };
+
   const renderCoffeeItem = (item) => (
     <View key={item.id} style={styles.coffeeItemContainer}>
       <Image source={{ uri: item.image }} style={styles.coffeeImage} />
@@ -59,10 +67,9 @@ const HomeScreen = () => {
         <Text style={styles.desc}>{item.description}</Text>
         <View style={styles.priceAndAddContainer}>
           <Text style={styles.coffeePrice}>{item.price}</Text>
-         
           <TouchableOpacity
             style={styles.addButton}
-            onPress={() => navigation.navigate("Beans")} 
+            onPress={() => handleAddButtonPress(item)} // Call function to handle navigation
           >
             <Text style={styles.addButtonText}>+</Text>
           </TouchableOpacity>
