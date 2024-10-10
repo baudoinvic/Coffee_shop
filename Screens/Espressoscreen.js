@@ -1,7 +1,11 @@
 import React from "react";
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const Espressoscreen = () => {
+ const navigation = useNavigation();
+
+
   return (
     <View style={styles.container}>
       <Image
@@ -38,7 +42,11 @@ const Espressoscreen = () => {
       </View>
       <View style={styles.cart}>
         <Text style={styles.cartprice}>$4.50</Text>
-        <TouchableOpacity style={styles.cartbutton}>
+       
+        <TouchableOpacity
+          style={styles.cartbutton}
+          onPress={() => navigation.navigate("Cart")}
+        >
           <Text style={styles.carttext}>Add to Cart</Text>
         </TouchableOpacity>
       </View>
