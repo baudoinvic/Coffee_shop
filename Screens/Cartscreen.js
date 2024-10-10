@@ -286,13 +286,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   sizeS: {
-    backgroundColor: "#4C4F56",
+    backgroundColor: "#1F2429",
   },
   sizeM: {
-    backgroundColor: "#3E444A",
+    backgroundColor: "#1F2429",
   },
   sizeL: {
-    backgroundColor: "#2F353A",
+    backgroundColor: "#1F2429",
   },
   sizeText: {
     color: "white",
@@ -304,7 +304,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   adjustButton: {
-    backgroundColor: "#1F2429",
+    backgroundColor: "#D17842",
     width: 30,
     height: 30,
     justifyContent: "center",
@@ -320,7 +320,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginHorizontal: 10,
     borderWidth: 1,
-    borderColor: "white",
+    borderColor: "#D17842",
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 5,
