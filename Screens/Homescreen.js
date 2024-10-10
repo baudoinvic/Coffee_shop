@@ -53,9 +53,9 @@ const HomeScreen = () => {
   const handleAddButtonPress = (item) => {
     // Navigate based on item name
     if (item.name === "Espresso") {
-      navigation.navigate("Espresso"); // Navigate to Espresso screen
+      navigation.navigate("Cappuccino"); // Navigate to Espresso screen
     } else if (item.name === "Coffee") {
-      navigation.navigate("Beans"); // Navigate to Beans screen
+      navigation.navigate("Robusta Beans"); // Navigate to Beans screen
     }
   };
 
@@ -69,7 +69,7 @@ const HomeScreen = () => {
           <Text style={styles.coffeePrice}>{item.price}</Text>
           <TouchableOpacity
             style={styles.addButton}
-            onPress={() => handleAddButtonPress(item)} // Call function to handle navigation
+            onPress={() => handleAddButtonPress(item)} 
           >
             <Text style={styles.addButtonText}>+</Text>
           </TouchableOpacity>
