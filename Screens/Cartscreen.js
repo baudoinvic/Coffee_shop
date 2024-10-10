@@ -6,7 +6,6 @@ const Cartscreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.cartItem}>
-        {/* Row Container: Image + Description + Button */}
         <View style={styles.fix}>
           <Image
             source={{
@@ -17,14 +16,13 @@ const Cartscreen = () => {
           <View style={styles.details}>
             <Text style={styles.textcart}>Cappuccino</Text>
             <Text style={styles.small}>With Steamed Milk</Text>
-            {/* Button should stay aligned to the left */}
+
             <TouchableOpacity style={styles.button}>
               <Text style={styles.buttonText}>Medium Roasted</Text>
             </TouchableOpacity>
           </View>
         </View>
 
-        {/* Sizes, Price, and Quantity Controls below */}
         <View style={styles.sizePriceQuantity}>
           {["S", "M", "L"].map((size, index) => (
             <View key={index} style={styles.row}>
@@ -41,6 +39,42 @@ const Cartscreen = () => {
                 <Text style={styles.sizeText}>{size}</Text>
               </TouchableOpacity>
               <Text style={styles.price}>$4.20</Text>
+              <TouchableOpacity style={styles.adjustButton}>
+                <Text style={styles.adjustButtonText}>-</Text>
+              </TouchableOpacity>
+              <Text style={styles.quantity}>1</Text>
+              <TouchableOpacity style={styles.adjustButton}>
+                <Text style={styles.adjustButtonText}>+</Text>
+              </TouchableOpacity>
+            </View>
+          ))}
+        </View>
+      </View>
+
+      <View style={styles.cartItem}>
+        <View style={styles.fix}>
+          <Image
+            source={{
+              uri: "https://media.istockphoto.com/id/1396456676/photo/coffee-grains-seamless-pattern.jpg?s=612x612&w=0&k=20&c=OGu1cKKaIN3GCS8ByR-QfaZ6kH3aoTjkRQn3fjXiQw0=",
+            }}
+            style={styles.image}
+          />
+          <View style={styles.details}>
+            <Text style={styles.textcart}>Cappuccino</Text>
+            <Text style={styles.small}>With Steamed Milk</Text>
+
+            <View style={styles.display}>
+              <TouchableOpacity style={styles.medium}>
+                <Text style={styles.Mediumtext}>M</Text>
+              </TouchableOpacity>
+              <Text style={styles.simple}>$6.20</Text>
+            </View>
+          </View>
+        </View>
+
+        <View style={styles.sizePriceQuantity}>
+          {["S", "M", "L"].map((size, index) => (
+            <View key={index} style={styles.row}>
               <TouchableOpacity style={styles.adjustButton}>
                 <Text style={styles.adjustButtonText}>-</Text>
               </TouchableOpacity>
@@ -69,8 +103,8 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   fix: {
-    flexDirection: "row", 
-    alignItems: "flex-start", 
+    flexDirection: "row",
+    alignItems: "flex-start",
   },
   image: {
     width: 100,
@@ -79,8 +113,8 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   details: {
-    flex: 1, 
-    justifyContent: "space-between", 
+    flex: 1,
+    justifyContent: "space-between",
   },
   textcart: {
     color: "white",
@@ -93,12 +127,12 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   button: {
-    alignSelf: "flex-start", 
+    alignSelf: "flex-start",
     paddingVertical: 8,
     paddingHorizontal: 12,
     backgroundColor: "#141921",
     borderRadius: 5,
-    marginTop: 10, 
+    marginTop: 10,
   },
   buttonText: {
     color: "white",
@@ -160,6 +194,28 @@ const styles = StyleSheet.create({
     paddingVertical: 4,
     borderRadius: 5,
   },
+  medium: {
+    backgroundColor: "#1F2429",
+    padding: 15,
+    width: 100,
+    marginTop: 10,
+    borderRadius: 20
+  },
+  Mediumtext: {
+    color: "white",
+    textAlign: "center",
+  },
+  display: {
+    flexDirection: "row",
+    alignItems: "center"
+  },
+   simple: {
+    color: "white",
+    marginTop: 10,
+    fontSize: 22,
+    fontWeight: "bold",
+    marginLeft: 20
+   }
 });
 
 export default Cartscreen;
