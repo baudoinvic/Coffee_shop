@@ -12,10 +12,8 @@ const Espressoscreen = () => {
       />
       <Text style={styles.text}>Description</Text>
       <Text style={styles.desc}>
-        Arabica beans are by far the most popular type of coffee beans, making
-        up about 60% of the world’s coffee. These tasty beans originated many
-        centuries ago in the highlands of Ethiopia, and may even be the first
-        coffee beans ever consumed!{" "}
+        Cappuccino is a latte made with more foam than steamed milk, often with
+        a sprinkle of cocoa powder or cinnamon on top.
       </Text>
 
       <Text style={styles.size}>Size</Text>
@@ -39,7 +37,7 @@ const Espressoscreen = () => {
         </View>
       </View>
       <View style={styles.cart}>
-        <Text style={styles.cartprice}>$10.50</Text>
+        <Text style={styles.cartprice}>$4.50</Text>
         <TouchableOpacity style={styles.cartbutton}>
           <Text style={styles.carttext}>Add to Cart</Text>
         </TouchableOpacity>
