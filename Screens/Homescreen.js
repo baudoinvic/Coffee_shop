@@ -1,6 +1,4 @@
 
-
-
 import React from "react";
 import {
   View,
@@ -12,7 +10,12 @@ import {
   ScrollView,
 } from "react-native";
 
+import { useNavigation } from "@react-navigation/native";
+
 const HomeScreen = () => {
+
+  const navigation = useNavigation();
+
   const coffeeItems = [
     {
       id: 1,
@@ -56,7 +59,11 @@ const HomeScreen = () => {
         <Text style={styles.desc}>{item.description}</Text>
         <View style={styles.priceAndAddContainer}>
           <Text style={styles.coffeePrice}>{item.price}</Text>
-          <TouchableOpacity style={styles.addButton}>
+         
+          <TouchableOpacity
+            style={styles.addButton}
+            onPress={() => navigation.navigate("Beans")} 
+          >
             <Text style={styles.addButtonText}>+</Text>
           </TouchableOpacity>
         </View>

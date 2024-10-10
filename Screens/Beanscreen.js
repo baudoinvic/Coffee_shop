@@ -4,8 +4,8 @@ import { View, Text, StyleSheet } from "react-native";
 const Beanscreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Welcome to the Home Screen!</Text>
-      {/* You can add more UI elements here */}
+      <Text>Welcome to the beans screen page</Text>
+      
     </View>
   );
 }
