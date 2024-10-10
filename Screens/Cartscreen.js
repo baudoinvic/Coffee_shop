@@ -1,8 +1,10 @@
 
 import React from "react";
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const Cartscreen = () => {
+   const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View style={styles.cartItem}>
@@ -85,6 +87,15 @@ const Cartscreen = () => {
             </View>
           ))}
         </View>
+      </View>
+      <View style={styles.total}>
+        <Text style={styles.totalText}>Total price $6.20</Text>
+        <TouchableOpacity
+          style={styles.cartbutton}
+          onPress={() => navigation.navigate("Cart")}
+        >
+          <Text style={styles.carttext}>Pay Now</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -199,7 +210,7 @@ const styles = StyleSheet.create({
     padding: 15,
     width: 100,
     marginTop: 10,
-    borderRadius: 20
+    borderRadius: 20,
   },
   Mediumtext: {
     color: "white",
@@ -207,15 +218,39 @@ const styles = StyleSheet.create({
   },
   display: {
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
   },
-   simple: {
+  simple: {
     color: "white",
     marginTop: 10,
     fontSize: 22,
     fontWeight: "bold",
-    marginLeft: 20
-   }
+    marginLeft: 20,
+  },
+  cartbutton: {
+    backgroundColor: "#D17842",
+    padding: 20,
+    width: 220,
+    borderRadius: 10,
+    marginLeft: 10,
+    marginTop: 10,
+  },
+
+  carttext: {
+    color: "white",
+    textAlign: "center",
+    fontSize: 18,
+  },
+
+  totalText: {
+    color: "white",
+    fontSize: "15"
+  },
+  total: {
+    flexDirection: "row",
+    alignItems: "center"
+  }
+  
 });
 
 export default Cartscreen;
