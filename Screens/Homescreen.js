@@ -40,6 +40,63 @@ const HomeScreen = () => {
           <Text style={styles.addButtonText}>+</Text>
         </TouchableOpacity>
       </View>
+
+      <View style={styles.coffeeItem}>
+        <Image
+          source={{
+            uri: "https://media.istockphoto.com/id/1484464555/photo/sip-savor-and-enjoy-a-perfectly-crafted-cappuccino-with-a-beautiful-twist.jpg?s=612x612&w=0&k=20&c=PwLcZk-OoqdlDMBCX74Eaehw_M0EmwUIELckrt9vEjQ=",
+          }} // Replace with actual image URL or local image
+          style={styles.coffeeImage}
+        />
+        {/* Description and Price */}
+        <View style={styles.coffeeDetails}>
+          <Text style={styles.coffeeDescription}>Espresso</Text>
+          <Text style={styles.desc}>With Steamed Milk</Text>
+          <Text style={styles.coffeePrice}>$5.00</Text>
+        </View>
+        {/* Add Button */}
+        <TouchableOpacity style={styles.addButton}>
+          <Text style={styles.addButtonText}>+</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.coffeeItem}>
+        <Image
+          source={{
+            uri: "https://media.istockphoto.com/id/1484464555/photo/sip-savor-and-enjoy-a-perfectly-crafted-cappuccino-with-a-beautiful-twist.jpg?s=612x612&w=0&k=20&c=PwLcZk-OoqdlDMBCX74Eaehw_M0EmwUIELckrt9vEjQ=",
+          }} // Replace with actual image URL or local image
+          style={styles.coffeeImage}
+        />
+        {/* Description and Price */}
+        <View style={styles.coffeeDetails}>
+          <Text style={styles.coffeeDescription}>Espresso</Text>
+          <Text style={styles.desc}>With Steamed Milk</Text>
+          <Text style={styles.coffeePrice}>$5.00</Text>
+        </View>
+        {/* Add Button */}
+        <TouchableOpacity style={styles.addButton}>
+          <Text style={styles.addButtonText}>+</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.coffeeItem}>
+        <Image
+          source={{
+            uri: "https://media.istockphoto.com/id/1484464555/photo/sip-savor-and-enjoy-a-perfectly-crafted-cappuccino-with-a-beautiful-twist.jpg?s=612x612&w=0&k=20&c=PwLcZk-OoqdlDMBCX74Eaehw_M0EmwUIELckrt9vEjQ=",
+          }} // Replace with actual image URL or local image
+          style={styles.coffeeImage}
+        />
+        {/* Description and Price */}
+        <View style={styles.coffeeDetails}>
+          <Text style={styles.coffeeDescription}>Espresso</Text>
+          <Text style={styles.desc}>With Steamed Milk</Text>
+          <Text style={styles.coffeePrice}>$5.00</Text>
+        </View>
+        {/* Add Button */}
+        <TouchableOpacity style={styles.addButton}>
+          <Text style={styles.addButtonText}>+</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
