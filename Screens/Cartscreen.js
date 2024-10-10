@@ -258,12 +258,12 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   button: {
-    alignSelf: "flex-start", // Ensures the button is aligned to the left
+    alignSelf: "flex-start", 
     paddingVertical: 8,
     paddingHorizontal: 12,
     backgroundColor: "#141921",
     borderRadius: 5,
-    marginTop: 10, // Adds space above the button
+    marginTop: 10, 
   },
   buttonText: {
     color: "white",
