@@ -69,8 +69,8 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   fix: {
-    flexDirection: "row", // Ensures the image and text are side by side
-    alignItems: "flex-start", // Aligns the text content to the top
+    flexDirection: "row", 
+    alignItems: "flex-start", 
   },
   image: {
     width: 100,
@@ -79,8 +79,8 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   details: {
-    flex: 1, // Ensures the text and button take up the remaining space
-    justifyContent: "space-between", // Space between description and button
+    flex: 1, 
+    justifyContent: "space-between", 
   },
   textcart: {
     color: "white",
