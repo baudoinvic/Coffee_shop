@@ -15,7 +15,7 @@ const SecondCart = () => {
             style={styles.image}
           />
           <View style={styles.details}>
-            <Text style={styles.textcart}>Cappuccino</Text>
+            <Text style={styles.textcart}>Liberica Coffee Beans</Text>
             <Text style={styles.small}>With Steamed Milk</Text>
 
             <TouchableOpacity style={styles.button}>
@@ -61,12 +61,12 @@ const SecondCart = () => {
             style={styles.image}
           />
           <View style={styles.details}>
-            <Text style={styles.textcart}>Cappuccino</Text>
-            <Text style={styles.small}>With Steamed Milk</Text>
+            <Text style={styles.textcart}>Robusta Beans</Text>
+            <Text style={styles.small}>from africa</Text>
 
             <View style={styles.display}>
               <TouchableOpacity style={styles.medium}>
-                <Text style={styles.Mediumtext}>M</Text>
+                <Text style={styles.Mediumtext}>250gm</Text>
               </TouchableOpacity>
               <Text style={styles.simple}>$6.20</Text>
             </View>
@@ -88,7 +88,7 @@ const SecondCart = () => {
         </View>
       </View>
       <View style={styles.total}>
-        <Text style={styles.totalText}>Total price $6.20</Text>
+        <Text style={styles.totalText}>Total price $10.40</Text>
         <TouchableOpacity
           style={styles.cartbutton}
           onPress={() => navigation.navigate("Cart")}
