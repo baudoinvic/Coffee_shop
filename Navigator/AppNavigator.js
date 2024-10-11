@@ -8,7 +8,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Orderscreen from "../Screens/Orderscreen"
 import Cofescreen from "../Screens/Cofescreen";
 import Espressoscreen from "../Screens/Espressoscreen";
-
+import SecondCart from "../Screens/SecondCart"
 
 
 
@@ -25,7 +25,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Payment" component={Paymentscreen} />
         <Stack.Screen name="OrderHistory" component={Orderscreen} />
         <Stack.Screen name="Cappuccino" component={Espressoscreen} />
-       
+        <Stack.Screen name="Second" component={SecondCart} />
       </Stack.Navigator>
     </NavigationContainer>
   );
