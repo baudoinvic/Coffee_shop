@@ -25,6 +25,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Payment" component={Paymentscreen} />
         <Stack.Screen name="OrderHistory" component={Orderscreen} />
         <Stack.Screen name="Cappuccino" component={Espressoscreen} />
+       
       </Stack.Navigator>
     </NavigationContainer>
   );
