@@ -50,7 +50,7 @@ const Payementscreen = () => {
   return (
     <View style={styles.container}>
       {/* Header */}
-      <Text style={styles.headerText}>Payment</Text>
+      
 
       {/* Order Summary */}
       <View style={styles.orderSummary}>
@@ -118,7 +118,7 @@ const Payementscreen = () => {
 
       {/* Pay Button */}
       <TouchableOpacity style={styles.payButton} onPress={handlePayNow}>
-        <Text style={styles.payButtonText}>Pay Now</Text>
+        <Text style={styles.payButtonText}>Pay from Credit Card</Text>
       </TouchableOpacity>
     </View>
   );
@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   payButton: {
-    backgroundColor: "#4CAF50",
+    backgroundColor: "#D17842",
     padding: 15,
     borderRadius: 10,
     alignItems: "center",

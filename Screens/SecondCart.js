@@ -93,7 +93,7 @@ const SecondCart = () => {
           style={styles.cartbutton}
           onPress={() => navigation.navigate("Payment")}
         >
-          <Text style={styles.carttext}>Pay from Credit Card</Text>
+          <Text style={styles.carttext}>Pay Now</Text>
         </TouchableOpacity>
       </View>
     </View>
