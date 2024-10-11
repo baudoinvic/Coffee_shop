@@ -11,6 +11,7 @@ import {
   ScrollView,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import Store from "../Store/Store";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -53,9 +54,9 @@ const HomeScreen = () => {
   const handleAddButtonPress = (item) => {
     // Navigate based on item name
     if (item.name === "Espresso") {
-      navigation.navigate("Cappuccino"); // Navigate to Espresso screen
+      navigation.navigate("Cappuccino"); 
     } else if (item.name === "Coffee") {
-      navigation.navigate("Robusta Beans"); // Navigate to Beans screen
+      navigation.navigate("Robusta Beans"); 
     }
   };
 
@@ -98,6 +99,7 @@ const HomeScreen = () => {
           {renderCoffeeItem(coffeeItems[3])}
         </View>
       </View>
+      <Store />
     </ScrollView>
   );
 };

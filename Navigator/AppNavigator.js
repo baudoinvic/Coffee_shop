@@ -9,6 +9,7 @@ import Orderscreen from "../Screens/Orderscreen"
 import Cofescreen from "../Screens/Cofescreen";
 import Espressoscreen from "../Screens/Espressoscreen";
 import SecondCart from "../Screens/SecondCart"
+import Store from "../Store/Store";
 
 
 
@@ -27,6 +28,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Cappuccino" component={Espressoscreen} />
         <Stack.Screen name="Second" component={SecondCart} />
       </Stack.Navigator>
+      <Stack.Screen name="Store" component={Store} />
     </NavigationContainer>
   );
 };
