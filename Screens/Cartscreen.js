@@ -94,7 +94,7 @@ const Cartscreen = () => {
           style={styles.cartbutton}
           onPress={() => navigation.navigate("Payment")}
         >
-          <Text style={styles.carttext}>Pay Now</Text>
+          <Text style={styles.carttext}>Pay</Text>
         </TouchableOpacity>
       </View>
     </View>

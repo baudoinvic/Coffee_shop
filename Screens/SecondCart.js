@@ -91,9 +91,9 @@ const SecondCart = () => {
         <Text style={styles.totalText}>Total price $10.40</Text>
         <TouchableOpacity
           style={styles.cartbutton}
-          onPress={() => navigation.navigate("Cart")}
+          onPress={() => navigation.navigate("Payment")}
         >
-          <Text style={styles.carttext}>Pay Now</Text>
+          <Text style={styles.carttext}>Pay</Text>
         </TouchableOpacity>
       </View>
     </View>
