@@ -10,7 +10,7 @@ const SecondCart = () => {
         <View style={styles.fix}>
           <Image
             source={{
-              uri: "https://media.istockphoto.com/id/1484464555/photo/sip-savor-and-enjoy-a-perfectly-crafted-cappuccino-with-a-beautiful-twist.jpg?s=612x612&w=0&k=20&c=PwLcZk-OoqdlDMBCX74Eaehw_M0EmwUIELckrt9vEjQ=",
+              uri: "https://media.istockphoto.com/id/1396456676/photo/coffee-grains-seamless-pattern.jpg?s=612x612&w=0&k=20&c=OGu1cKKaIN3GCS8ByR-QfaZ6kH3aoTjkRQn3fjXiQw0=",
             }}
             style={styles.image}
           />
@@ -56,7 +56,7 @@ const SecondCart = () => {
         <View style={styles.fix}>
           <Image
             source={{
-              uri: "https://media.istockphoto.com/id/1496859162/photo/coffee-cup-latte-art-on-wooden-table-cafe-menu.jpg?s=612x612&w=0&k=20&c=bDz1TO4e0NfMOgUYpAAWWDzba3msUg2cSLSzXV6iZVk=",
+              uri: "https://media.istockphoto.com/id/1039706048/photo/coffee-beans.jpg?s=612x612&w=0&k=20&c=HAWwM-GrBV1vxBrxQmpT1WQrlTg9L5Yr9J4NyPSzWW0=",
             }}
             style={styles.image}
           />

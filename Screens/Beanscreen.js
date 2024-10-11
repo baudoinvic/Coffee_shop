@@ -46,7 +46,7 @@ const navigation = useNavigation();
         <Text style={styles.cartprice}>$10.50</Text>
         <TouchableOpacity
           style={styles.cartbutton}
-          onPress={() => navigation.navigate("Cart")}
+          onPress={() => navigation.navigate("Second")}
         >
           <Text style={styles.carttext}>Add to Cart</Text>
         </TouchableOpacity>
