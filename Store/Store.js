@@ -4,14 +4,18 @@
 import React from "react";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const Store = () => {
+
+    const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <TouchableOpacity>
         <Icon name="home" size={30} color="#D17842" style={styles.icon} />
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("Cart")}>
         <Icon
           name="shopping-cart"
           size={30}
