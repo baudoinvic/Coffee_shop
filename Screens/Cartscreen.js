@@ -92,7 +92,7 @@ const Cartscreen = () => {
         <Text style={styles.totalText}>Total price $6.20</Text>
         <TouchableOpacity
           style={styles.cartbutton}
-          onPress={() => navigation.navigate("Cart")}
+          onPress={() => navigation.navigate("Payment")}
         >
           <Text style={styles.carttext}>Pay Now</Text>
         </TouchableOpacity>
