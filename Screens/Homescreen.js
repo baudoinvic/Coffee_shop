@@ -52,7 +52,6 @@ const HomeScreen = () => {
   ];
 
   const handleAddButtonPress = (item) => {
-    // Navigate based on item name
     if (item.name === "Espresso") {
       navigation.navigate("Cappuccino"); 
     } else if (item.name === "Coffee") {
