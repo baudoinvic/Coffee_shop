@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from "react-native";
 const Orderscreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Welcome to the Home Screen!</Text>
+      <Text>Order Screen</Text>
     </View>
   );
 }
