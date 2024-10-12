@@ -5,7 +5,6 @@ const Orderscreen = () => {
   return (
     <View style={styles.container}>
       <Text>Welcome to the Home Screen!</Text>
-      {/* You can add more UI elements here */}
     </View>
   );
 }
