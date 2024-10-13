@@ -1,11 +1,11 @@
 import React from 'react'
 import { View, Text, StyleSheet } from "react-native";
 
+
 const Orderscreen = () => {
   return (
     <View style={styles.container}>
       <Text>Order Screen</Text>
-    
     </View>
   );
 }
