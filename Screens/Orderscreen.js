@@ -70,6 +70,27 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+
+  cartItem: {
+    backgroundColor: "#262B33",
+    borderRadius: 10,
+    padding: 15,
+    marginBottom: 15,
+  },
+  fix: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+  },
+  image: {
+    width: 100,
+    height: 100,
+    borderRadius: 10,
+    marginRight: 10,
+  },
+  details: {
+    flex: 1,
+    justifyContent: "space-between",
+  },
 });
 
 
