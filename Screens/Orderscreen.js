@@ -6,6 +6,12 @@ const Orderscreen = () => {
   return (
     <View style={styles.container}>
       <Text>Order History</Text>
+      <View style={styles.order}>
+         <View style={styles.left}>
+           <Text>Order Date</Text>
+           <Text>20th March 17:23</Text>
+         </View>
+      </View>
     </View>
   );
 }
