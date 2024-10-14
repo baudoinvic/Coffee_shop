@@ -5,7 +5,7 @@ import { View, Text, StyleSheet } from "react-native";
 const Orderscreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Order Screen</Text>
+      <Text>Order History</Text>
     </View>
   );
 }
@@ -13,8 +13,6 @@ const Orderscreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
   },
 });
 
