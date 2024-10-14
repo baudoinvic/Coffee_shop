@@ -1,7 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet,TouchableOpacity } from "react-native";
 
-
 const Orderscreen = () => {
   return (
     <View style={styles.container}>
