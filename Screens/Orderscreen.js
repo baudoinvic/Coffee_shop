@@ -33,6 +33,7 @@ const Orderscreen = () => {
             </TouchableOpacity>
           </View>
         </View>
+        
 
         <View style={styles.sizePriceQuantity}>
           {["S", "M", "L"].map((size, index) => (
