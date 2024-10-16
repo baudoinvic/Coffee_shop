@@ -81,7 +81,6 @@ const HomeScreen = () => {
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.title}>Find the best{"\n"}coffee for you.</Text>
-
       <TextInput
         style={styles.searchBar}
         placeholder="Search for coffee..."
