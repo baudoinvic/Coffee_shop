@@ -11,8 +11,6 @@ import Espressoscreen from "../Screens/Espressoscreen";
 import SecondCart from "../Screens/SecondCart"
 import Store from "../Store/Store";
 
-
-
 const Stack = createStackNavigator();
 
 const AppNavigator = () => {
