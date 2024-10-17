@@ -49,10 +49,7 @@ const Payementscreen = () => {
 
   return (
     <View style={styles.container}>
-      {/* Header */}
-      
-
-      {/* Order Summary */}
+   
       <View style={styles.orderSummary}>
         <Text style={styles.sectionTitle}>Order Summary</Text>
         <View style={styles.itemRow}>
