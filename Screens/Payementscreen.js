@@ -23,7 +23,7 @@ const Payementscreen = () => {
 
   const handlePayNow = () => {
     if (selectedPaymentMethod === "Credit Card") {
-      // Handle credit card payment logic here
+    
       if (cardDetails.cardNumber && cardDetails.expiryDate && cardDetails.cvv) {
         Alert.alert(
           "Payment Successful",
