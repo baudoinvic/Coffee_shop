@@ -62,7 +62,6 @@ const Payementscreen = () => {
         </View>
       </View>
 
-      {/* Payment Methods */}
       <View style={styles.paymentMethods}>
         <Text style={styles.sectionTitle}>Select Payment Method</Text>
         <TouchableOpacity
