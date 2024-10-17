@@ -41,7 +41,7 @@ const Payementscreen = () => {
         "Redirecting to PayPal",
         "You are being redirected to PayPal to complete the payment."
       );
-      // Simulate PayPal redirect with your PayPal integration logic here
+     
     } else {
       Alert.alert("No Payment Method", "Please select a payment method.");
     }
