@@ -36,7 +36,7 @@ const Payementscreen = () => {
         );
       }
     } else if (selectedPaymentMethod === "PayPal") {
-      // Handle PayPal redirection or logic here
+     
       Alert.alert(
         "Redirecting to PayPal",
         "You are being redirected to PayPal to complete the payment."
