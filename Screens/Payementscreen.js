@@ -119,7 +119,7 @@ const Payementscreen = () => {
 
      
       <TouchableOpacity style={styles.payButton} onPress={handlePayNow}>
-        <Text style={styles.payButtonText}>Pay from Credit Card</Text>
+        <Text style={styles.payButtonText}>Pay Now</Text>
       </TouchableOpacity>
     </View>
   );
