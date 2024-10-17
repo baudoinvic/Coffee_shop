@@ -15,6 +15,8 @@ const Payementscreen = () => {
 
   const navigation = useNavigation();
 
+
+
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
   const [cardDetails, setCardDetails] = useState({
     cardNumber: "",
@@ -54,7 +56,6 @@ const Payementscreen = () => {
 
   return (
     <View style={styles.container}>
-   
       <View style={styles.orderSummary}>
         <Text style={styles.sectionTitle}>Order Summary</Text>
         <View style={styles.itemRow}>
@@ -117,8 +118,14 @@ const Payementscreen = () => {
         </View>
       )}
 
-     
-      <TouchableOpacity style={styles.payButton} onPress={handlePayNow}>
+      {/* <TouchableOpacity style={styles.payButton} onPress={handlePayNow()}>
+        <Text style={styles.payButtonText}>Pay Now</Text>
+      </TouchableOpacity> */}
+
+      <TouchableOpacity
+        style={styles.payButton}
+        onPress={() => navigation.navigate("Orderscreen")}
+      >
         <Text style={styles.payButtonText}>Pay Now</Text>
       </TouchableOpacity>
     </View>
