@@ -15,8 +15,6 @@ const Payementscreen = () => {
 
   const navigation = useNavigation();
 
-
-
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
   const [cardDetails, setCardDetails] = useState({
     cardNumber: "",
