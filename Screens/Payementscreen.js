@@ -115,16 +115,16 @@ const Payementscreen = () => {
         </View>
       )}
 
-      {/* <TouchableOpacity style={styles.payButton} onPress={handlePayNow()}>
+      <TouchableOpacity style={styles.payButton} onPress={handlePayNow()}>
         <Text style={styles.payButtonText}>Pay Now</Text>
-      </TouchableOpacity> */}
+      </TouchableOpacity>
 
-      <TouchableOpacity
+      {/* <TouchableOpacity
         style={styles.payButton}
         onPress={() => navigation.navigate("OrderHistory")}
       >
         <Text style={styles.payButtonText}>Pay Now</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   );
 };
