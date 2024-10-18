@@ -88,7 +88,6 @@ const Payementscreen = () => {
         </TouchableOpacity>
       </View>
 
-      {/* Show Credit Card Input Fields if Credit Card is Selected */}
       {selectedPaymentMethod === "Credit Card" && (
         <View style={styles.creditCardForm}>
           <Text style={styles.sectionTitle}>Enter Card Details</Text>
