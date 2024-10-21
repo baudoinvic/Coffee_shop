@@ -5,7 +5,7 @@ const Cofescreen = () => {
   return (
     <View style={styles.container}>
       <Text>Welcome to the Home Screen!</Text>
-      
+        <Text>The coffee will appear here</Text>
     </View>
   );
 }
