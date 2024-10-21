@@ -48,7 +48,7 @@ const Payementscreen = () => {
       );
      
     } else {
-      Alert.alert("No Payment Method", "Please select a payment method.");
+      Alert.alert("No Payment Method", "Please select a payment method");
     }
   };
 
