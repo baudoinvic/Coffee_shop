@@ -96,7 +96,7 @@ const Orderscreen = () => {
               >
                 <Text style={styles.sizeText}>{size}</Text>
               </TouchableOpacity>
-              <Text style={styles.price}>$10.20</Text>
+              <Text style={styles.price}>$4.20</Text>
               <TouchableOpacity style={styles.adjustButton}>
                 <Text style={styles.adjustButtonText}>-</Text>
               </TouchableOpacity>
