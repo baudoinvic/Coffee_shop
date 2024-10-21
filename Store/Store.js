@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 
 const Store = () => {
 
-    const navigation = useNavigation();
+const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
