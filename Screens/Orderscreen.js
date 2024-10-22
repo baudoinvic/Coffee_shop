@@ -3,8 +3,6 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 
 
 const Orderscreen = () => {
- 
-
   return (
     <View style={styles.container}>
       <Image
