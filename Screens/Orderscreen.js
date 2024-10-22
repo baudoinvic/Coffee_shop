@@ -90,9 +90,9 @@ const Orderscreen = () => {
         <Text style={styles.totalText}>Total price $6.20</Text>
         <TouchableOpacity
           style={styles.cartbutton}
-          onPress={() => navigation.navigate("Payment")}
+        
         >
-          <Text style={styles.carttext}>Pay Now</Text>
+          <Text style={styles.carttext}>Download</Text>
         </TouchableOpacity>
       </View>
     </View>
