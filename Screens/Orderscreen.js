@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   cartItem: {
-    backgroundColor: "#262B33",
+    backgroundColor: "",
     borderRadius: 10,
     padding: 15,
     marginBottom: 15,
