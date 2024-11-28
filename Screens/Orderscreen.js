@@ -111,6 +111,7 @@ const styles = StyleSheet.create({
     padding: 15,
     marginBottom: 15,
   },
+  
   fix: {
     flexDirection: "row",
     alignItems: "flex-start",
