@@ -3,6 +3,7 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
+
 const Cartscreen = () => {
    const navigation = useNavigation();
   return (
