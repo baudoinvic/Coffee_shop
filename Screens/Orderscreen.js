@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 
 const Orderscreen = () => {
+  
 
   return (
     <View style={styles.container}>
@@ -111,7 +112,7 @@ const styles = StyleSheet.create({
     padding: 15,
     marginBottom: 15,
   },
-  
+
   fix: {
     flexDirection: "row",
     alignItems: "flex-start",
