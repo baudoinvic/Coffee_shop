@@ -58,6 +58,7 @@ const HomeScreen = () => {
       navigation.navigate("Robusta Beans"); 
     }
   };
+  
 
   const renderCoffeeItem = (item) => (
     <View key={item.id} style={styles.coffeeItemContainer}>
