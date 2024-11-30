@@ -4,6 +4,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 import { View, StyleSheet, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
+
 const Store = () => {
 
 const navigation = useNavigation();
