@@ -80,7 +80,6 @@ const Cofescreen = () => {
           </View>
         </View>
 
-
         <View style={styles.sizePriceQuantity}>
           {["S", "M", "L"].map((size, index) => (
             <View key={index} style={styles.row}>
