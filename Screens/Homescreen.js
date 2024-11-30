@@ -60,6 +60,7 @@ const HomeScreen = () => {
   };
   
 
+  
   const renderCoffeeItem = (item) => (
     <View key={item.id} style={styles.coffeeItemContainer}>
       <Image source={{ uri: item.image }} style={styles.coffeeImage} />
