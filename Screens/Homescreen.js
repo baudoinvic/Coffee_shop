@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import {
   View,
@@ -78,7 +77,7 @@ const HomeScreen = () => {
     </View>
   );
 
-  
+
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.title}>Find the best{"\n"}coffee for you.</Text>
