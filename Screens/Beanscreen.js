@@ -22,6 +22,7 @@ const navigation = useNavigation();
         coffee beans ever consumed!{" "}
       </Text>
 
+
       <Text style={styles.size}>Size</Text>
       <View style={styles.medium}>
         <View style={styles.firstmedium}>
