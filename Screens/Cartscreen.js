@@ -52,6 +52,7 @@ const Cartscreen = () => {
         </View>
       </View>
 
+
       <View style={styles.cartItem}>
         <View style={styles.fix}>
           <Image
