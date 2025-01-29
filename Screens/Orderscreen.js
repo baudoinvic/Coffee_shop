@@ -2,8 +2,6 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 
 const Orderscreen = () => {
-  
-
   return (
     <View style={styles.container}>
       <View style={styles.cartItem}>
